@@ -6,7 +6,7 @@
  */
 
 /**
- * This is class equivalent class in other languages ex.: C#
+ * This is function construcor equivalent class in other languages ex.: C#
  * @param {string} name 
  * @param {number} age 
  * @param {string} answer 
@@ -66,3 +66,21 @@ var answer = prompt('Please choice \'red\' or \'green\' color: ');
 
 var human = new User(name, age, answer);
 
+/**
+ * Function construcor Box
+ * @param {number} height 
+ * @param {number} width 
+ * @param {number} depth 
+ * @param {string} material 
+ */
+function Box(height, width, depth, material) {
+
+    this.height   = height,
+    this.width    = width,
+    this.depth    = depth,
+    this.material = material;
+
+}
+
+Box.prototype.volume = function () { return this.height * this.width * this.depth; };
+Box.prototype.equals = function (obj) { if (this.material === obj.material) { return true; } else { return false; } };
