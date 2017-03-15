@@ -1,5 +1,5 @@
 
-'use strict'
+'use strict';
 
 /**
  * ---------------------- This is simple test OOP based on JavaScript ----------------------
